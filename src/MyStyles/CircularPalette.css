@@ -1,0 +1,25 @@
+/* CircularPalette.css */
+.color-palette {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: conic-gradient(
+        from 0deg,
+        #ff0000,
+        #ffff00,
+        #00ff00,
+        #00ffff,
+        #0000ff,
+        #ff00ff,
+        #ff0000
+    );
+}
+
+.colorMode{
+    display: flex;
+}
+
+.colorMode:hover{
+    cursor: context-menu;
+}
+
