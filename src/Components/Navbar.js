@@ -1,6 +1,6 @@
 
 import React from 'react';
-import {Link} from 'react-router-dom';
+// import {Link} from 'react-router-dom';
 import '../MyStyles/CircularPalette.css';
 
 export default function Navbar(props){
@@ -8,15 +8,15 @@ export default function Navbar(props){
     return (
         <nav id="navbar" className={`navbar navbar-expand-lg navbar-dark`} >
 			<div className="container-fluid">
-				<Link style={{color: `${props.mode}`==='light'? 'black' : 'white'}} className="navbar-brand" to="/">{props.title}</Link>
+				<a style={{color: `${props.mode}`==='light'? 'black' : 'white'}} className="navbar-brand" href="#">{props.title}</a>
 
 				<div className="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul className="navbar-nav me-auto mb-2 mb-lg-0">
 						<li className="nav-item">
-							<Link style={{color: `${props.mode}`==='light'? 'black' : 'white'}} className="nav-link active" aria-current="page" to="/">Home</Link>
+							<a style={{color: `${props.mode}`==='light'? 'black' : 'white'}} className="nav-link active" aria-current="page" href="#">Home</a>
 						</li>
 						<li className="nav-item">
-							<Link style={{color: `${props.mode}`==='light'? 'black' : 'white'}} className="nav-link" to="/about">{props.aboutText}</Link>
+							<a style={{color: `${props.mode}`==='light'? 'black' : 'white'}} className="nav-link" href="#">{props.aboutText}</a>
 						</li>
 					</ul>
 
